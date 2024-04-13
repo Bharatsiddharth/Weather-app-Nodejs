@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>{{title}}</h1>
+     <div class="main-content">
+        {{>header}}
+        <article class="widget">
+                <form class="weatherLocation"><input class="input-field" placeholder="Enter city name" type = "text"/><button class="search-button">Seach</button>
+                </form>
+                <div class="icon-and-weatherInfo">
+                    <div class="weatherIcon"><i></i></div>
+                    <div class="weatherInfo">
+                         <div class="temperature"><span></span></div>
+                        <div class="weatherCondition"></div> 
+                    </div>
+                </div>
+                <div class="place"></div>
+                <div class="date"></div>
+            </article>
+    </div>
+
+
+    <script text="text/javascript" src="js/script.js"></script>
 </body>
 </html>
